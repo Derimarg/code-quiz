@@ -12,28 +12,31 @@
 <body>
     <header>
         <div class="score"><a id="score">View high scores</a></div>
-        <div id="time" class="time">Time: 0</div>
+        <div id="timer-count" class="time">Time: 75</div>
     </header>
 
-    <section id="start" class="container-start">
+    <section id="start-block" class="start-block">
         <h1>Coding Quiz Challenge</h1>
         <p>
             Try to answer the following code-related questions within the time limit.<br>
             Keep in mind that incorrect answers will penalize your score/time<br>
             by ten seconds!
         </p>
-        <div><button>Start Quiz</button></div>
+        <div><button id="start-button">Start Quiz</button></div>
     </section>
 
-    <section id="questions" class="hiddend">
+    <section id="questions-block" class="hidded">
         <h1 id="question">Question</h1>
         <div id="answers" class="answers-grid">
-            <button>1. answer 1</button>
-            <button>1. answer 2</button>
-            <button>1. answer 3</button>
-            <button>1. answer 4</button>
+            <button class="btn">1. answer 1</button>
+            <button class="btn">1. answer 2</button>
+            <button class="btn">1. answer 3</button>
+            <button class="btn">1. answer 4</button>
         </div>
-        <h2 id=""></h2>
+        <h2 id="verify-answer" class=" good-bad hidded"></h2>
+        <div class="block">
+            <button id="next-button" class="hidded">Next</button>
+        </div>
     </section>
 
     <script src="./resources/js/script.js"></script>

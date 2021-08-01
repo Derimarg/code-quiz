@@ -10,7 +10,8 @@
     --border-hover-color: rgb(122,104,162);
     --tertiary-color: #aaaaaa;
     --white-color: #ffffff;
-    --correct-color: #6b8e23;
+    --Good-color: #33cc00;
+    --Bad-color: #ff0000;
   }
 
   body {
@@ -24,7 +25,7 @@
       text-decoration: none;
   }
 
-  .container-start, h2 {
+  .start-block, h2 {
       text-align: center;
   }
 
@@ -84,8 +85,23 @@ button:hover {
     display: none;
 }
 
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
 .answers-grid {
     display: grid;
     gap: 10px;
     margin: 20px 0;
+}
+
+.btn.good {
+    background-color: var(--Good-color);
+}
+
+.btn.bad {
+    background-color: var(--Bad-color);
 }

@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <div class="score"><a id="score">View high scores</a></div>
+        <div class="score"><a id="score-link">View high scores</a></div>
         <div id="timer-count" class="time">Time: 75</div>
     </header>
 
@@ -46,6 +46,18 @@
             <input type="text" id="initials-field" maxlength="3" placeholder="Enter your initials" />
             <button id="submit-button">Submit</button>
         </form>
+    </section>
+
+    <section id="highscores" class="highscores-container hidded">
+        <div id="high-scores">
+            <h1 class="centered">High Scores</h1>
+            <div id="highscore" class="highscore highscore-list"></div>
+            <div class="controls">
+                <button id="back-button">Go back</button>
+                <button id="clear-button">Clear High Scores</button>
+            </div>
+        </div>
+        
     </section>
 
     <script src="./resources/js/script.js"></script>

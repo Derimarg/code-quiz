@@ -20,50 +20,50 @@ let count = 0;
 
 var questions = [
   {
-    question: "Commonly used data types Do Not Include:",
+    question: "Which of the following is true about variable naming conventions in JavaScript?",
     answers: [
-      { text: "1. strings", result: false },
-      { text: "2. booleans", result: true },
-      { text: "3. alerts", result: false },
-      { text: "4. numbers", result: false },
+      { text: "1. You should not use any of the JavaScript reserved keyword as variable name.", result: false },
+      { text: "2. JavaScript variable names should not start with a numeral (0-9).", result: false },
+      { text: "3. Both of the above.", result: true},
+      { text: "4. None of the above.", result: false },
     ],
   },
   {
     question:
-      "The conditions in an if/else statement is enclosed with __________.",
+      "Which of the following is the correct syntax to create a cookie using JavaScript?",
     answers: [
-      { text: "1. quotes", result: false },
-      { text: "2. curly brackets", result: false },
-      { text: "3. parenthesis", result: true },
-      { text: "4. square brackets", result: false },
+      { text: "1. document.cookie = 'key1 = value1; key2 = value2; expires = date';", result: true },
+      { text: "2. browser.cookie = 'key1 = value1; key2 = value2; expires = date';", result: false },
+      { text: "3. window.cookie = 'key1 = value1; key2 = value2; expires = date';", result: false },
+      { text: "4. navigator.cookie = 'key1 = value1; key2 = value2; expires = date';", result: false },
     ],
   },
   {
-    question: "Arrays in JavaScript can be used to store _________.",
+    question: "Which built-in method returns the calling string value converted to upper case?",
     answers: [
-      { text: "1. numbers and strings", result: false },
-      { text: "2. other arrays", result: false },
-      { text: "3. booleans", result: false },
-      { text: "4. all of the above", result: true },
+      { text: "1. toUpperCase()", result: true },
+      { text: "2. toUpper()", result: false },
+      { text: "3. changeCase(case)", result: false },
+      { text: "4. None of the above.", result: false },
     ],
   },
   {
     question:
-      "String values must be enclosed within ________ when being assigned to variables.",
+      "Which of the following type of variable is visible only within a function where it is defined?",
     answers: [
-      { text: "1. commas", result: false },
-      { text: "2. curly brackets", result: true },
-      { text: "3. quotes", result: false },
-      { text: "4, parenthesis", result: false },
+      { text: "1. global variable", result: false },
+      { text: "2. local variable", result: true },
+      { text: "3. Both of the above.", result: false },
+      { text: "4, None of the above.", result: false },
     ],
   },
   {
-    question: "A very useful tool used during development and debugger is:",
+    question: "Which of the following function of Boolean object returns the primitive value of the Boolean object?",
     answers: [
-      { text: "1. JavaSccript", result: false },
-      { text: "2. terminal/bash", result: false },
-      { text: "3. for loops", result: false },
-      { text: "4. console.log", result: true },
+      { text: "1. toSource()", result: false },
+      { text: "2. valueOf()", result: true },
+      { text: "3. toString()", result: false },
+      { text: "4. None of the above.", result: false },
     ],
   },
 ];

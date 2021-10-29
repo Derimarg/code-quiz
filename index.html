@@ -2,65 +2,66 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./resources/css/style.css" />
-    <title>Code Quiz</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Code Quiz</title>
 </head>
 
 <body>
-    <header>
-        <div class="score"><a id="score-link">View high scores</a></div>
-        <div id="timer-count" class="time">Time: 75</div>
-    </header>
+  <header>
+    <div class="score"><a id="sc-link">View high scores</a></div>
+    <div id="timer-count" class="time">Time: 0</div>
+  </header>
 
-    <section id="start-block" class="start-block">
-        <h1>Coding Quiz Challenge</h1>
-        <p>
-            Try to answer the following code-related questions within the time limit.<br>
-            Keep in mind that incorrect answers will penalize your score/time<br>
-            by ten seconds!
-        </p>
-        <div><button id="start-button">Start Quiz</button></div>
-    </section>
+  <section id="st-block" class="st-block">
+    <h1>Coding Quiz Challenge</h1>
+    <p>
+      Try to answer the following code-related questions within the time
+      limit.<br />
+      Keep in mind that incorrect answers will penalize your score/time<br />
+      by ten seconds!
+    </p>
+    <div><button id="st-btn">Start Quiz</button></div>
+  </section>
 
-    <section id="questions-block" class="hidded">
-        <h1 id="question">Question</h1>
-        <div id="answers" class="answers-grid">
-            <button class="btn">1. answer 1</button>
-            <button class="btn">1. answer 2</button>
-            <button class="btn">1. answer 3</button>
-            <button class="btn">1. answer 4</button>
-        </div>
-        <h2 id="verify-answer" class=" good-bad hidded"></h2>
-        <div class="block">
-            <button id="next-button" class="hidded">Next</button>
-        </div>
-    </section>
+  <section id="q-block" class="hidden">
+    <h1 id="question">Question</h1>
+    <div id="answers" class="answers-grid">
+      <button class="btn">1. answer 1</button>
+      <button class="btn">2. answer 2</button>
+      <button class="btn">3. answer 3</button>
+      <button class="btn">4. answer 4</button>
+    </div>
+    <h2 id="verify-answer" class="good-bad hidden"></h2>
+    <div class="block">
+      <button id="next-btn" class="hidden">Next</button>
+    </div>
+  </section>
 
-    <section id="score-block" class="hidded">
-        <form id="submit-form">
-            <h3 id="your-score"></h3>
-            <label id="initials-label">Enter your initials to save the score:</label>
-            <input type="text" id="initials-field" maxlength="3" placeholder="Enter your initials" />
-            <button id="submit-button">Submit</button>
-        </form>
-    </section>
+  <section id="score-block" class="hidden">
+    <form id="submit-form">
+      <h3 class="f-b">All done!</h3>
+      <h3 id="your-score"></h3>
+      <label id="initials-label">Enter initials:</label>
+      <input type="text" id="initials-field" maxlength="3" placeholder="Enter your initials" />
+      <button id="submit-btn">Submit</button>
+    </form>
+  </section>
 
-    <section id="highscores" class="highscores-container hidded">
-        <div id="high-scores">
-            <h1 class="centered">High Scores</h1>
-            <div id="highscore" class="highscore highscore-list"></div>
-            <div class="controls">
-                <button id="back-button">Go back</button>
-                <button id="clear-button">Clear High Scores</button>
-            </div>
-        </div>
-        
-    </section>
+  <section id="highscores" class="highscores-container hidden">
+    <div id="high-scores">
+      <h1 class="centered">High Scores</h1>
+      <div id="highscore" class="highscore highscore-list"></div>
+      <div class="controls">
+        <button id="back-btn">Go back</button>
+        <button id="clear-btn">Clear High Scores</button>
+      </div>
+    </div>
+  </section>
 
-    <script src="./resources/js/script.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
